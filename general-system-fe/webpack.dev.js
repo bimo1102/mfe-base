@@ -13,7 +13,7 @@ module.exports = merge(common, {
         hot: true,
         historyApiFallback: true,
         static: [
-            { directory: path.resolve(__dirname, './src/modules'), publicPath: '/' },
+            { directory: path.resolve(__dirname, './src'), publicPath: '/' },
             { directory: path.resolve(__dirname, './../share-system-fe/plugins'), publicPath: '/assets/plugins' },
             { directory: path.resolve(__dirname, './public/media'), publicPath: '/media' },
         ],

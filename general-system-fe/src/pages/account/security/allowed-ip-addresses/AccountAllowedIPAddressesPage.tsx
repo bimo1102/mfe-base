@@ -1,46 +1,40 @@
 import { Fragment } from 'react';
 
 import { Container } from '@/components/container';
-import {
-  Toolbar,
-  ToolbarActions,
-  ToolbarDescription,
-  ToolbarHeading,
-  ToolbarPageTitle
-} from '@/partials/toolbar';
 import { PageNavbar } from '@/pages/account';
+import { Toolbar, ToolbarActions, ToolbarDescription, ToolbarHeading, ToolbarPageTitle } from '@/partials/toolbar';
 
-import { AccountAllowedIPAddressesContent } from '.';
 import { useLayout } from '@/providers';
+import { AccountAllowedIPAddressesContent } from '.';
 
 const AccountAllowedIPAddressesPage = () => {
-  const { currentLayout } = useLayout();
+    const { currentLayout } = useLayout();
 
-  return (
-    <Fragment>
-      <PageNavbar />
+    return (
+        <Fragment>
+            <PageNavbar />
 
-      {currentLayout?.name === 'demo1-layout' && (
-        <Container>
-          <Toolbar>
-            <ToolbarHeading>
-              <ToolbarPageTitle />
-              <ToolbarDescription>Central Hub for Personal Customization</ToolbarDescription>
-            </ToolbarHeading>
-            <ToolbarActions>
-              <a href="#" className="btn btn-sm btn-light">
-                Security Overview
-              </a>
-            </ToolbarActions>
-          </Toolbar>
-        </Container>
-      )}
+            {currentLayout?.name === 'main-layout' && (
+                <Container>
+                    <Toolbar>
+                        <ToolbarHeading>
+                            <ToolbarPageTitle />
+                            <ToolbarDescription>Central Hub for Personal Customization</ToolbarDescription>
+                        </ToolbarHeading>
+                        <ToolbarActions>
+                            <a href="#" className="btn btn-sm btn-light">
+                                Security Overview
+                            </a>
+                        </ToolbarActions>
+                    </Toolbar>
+                </Container>
+            )}
 
-      <Container>
-        <AccountAllowedIPAddressesContent />
-      </Container>
-    </Fragment>
-  );
+            <Container>
+                <AccountAllowedIPAddressesContent />
+            </Container>
+        </Fragment>
+    );
 };
 
 export { AccountAllowedIPAddressesPage };

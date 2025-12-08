@@ -1,12 +1,12 @@
 import { Container } from '@/components/container';
-import { Demo1LightSidebarContent } from '@/pages/dashboards/demo1';
+import { MainLightSidebarContent } from '@/pages/dashboards/main';
 
 const AuthenticationGetStartedPage = () => {
-  return (
-    <Container>
-      <Demo1LightSidebarContent />
-    </Container>
-  );
+    return (
+        <Container>
+            <MainLightSidebarContent />
+        </Container>
+    );
 };
 
 export { AuthenticationGetStartedPage };

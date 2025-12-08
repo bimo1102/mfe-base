@@ -1,12 +1,12 @@
+import axios from 'axios';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import axios from 'axios';
 
 import { App } from './App';
 import { setupAxios } from './auth';
 import { ProvidersWrapper } from './providers';
 
-import '@/components/keenicons/assets/styles.css';
+// import '@/components/keenicons/assets/styles.css';
 import '@/styles/globals.css';
 
 setupAxios(axios);

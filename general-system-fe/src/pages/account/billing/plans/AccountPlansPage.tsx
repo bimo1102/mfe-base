@@ -1,10 +1,10 @@
-import { Fragment } from 'react';
 import { Container } from '@/components/container';
-import { Toolbar, ToolbarActions, ToolbarHeading } from '@/layouts/demo1/toolbar';
-import { Link } from 'react-router';
+import { Toolbar, ToolbarActions, ToolbarHeading } from '@/layouts/mains/toolbar';
 import { PageNavbar } from '@/pages/account';
-import { AccountPlansContent } from '.';
 import { useLayout } from '@/providers';
+import { Fragment } from 'react';
+import { Link } from 'react-router';
+import { AccountPlansContent } from '.';
 
 const AccountPlansPage = () => {
     const { currentLayout } = useLayout();
@@ -13,7 +13,7 @@ const AccountPlansPage = () => {
         <Fragment>
             <PageNavbar />
 
-            {currentLayout?.name === 'demo1-layout' && (
+            {currentLayout?.name === 'main-layout' && (
                 <Container>
                     <Toolbar>
                         <ToolbarHeading title="Plans" description="Central Hub for Personal Customization" />

@@ -10,7 +10,7 @@
 module.exports = {
     content: ['index.html', './src/**/*.{ts,tsx}'],
     safelist: [
-        'demo1',
+        'main',
         'hidden',
         'ki-filled',
         'ki-outline',
@@ -673,7 +673,7 @@ module.exports = {
                 },
             },
             layouts: {
-                demo1: {
+                main: {
                     sidebar: {
                         width: {
                             desktop: '280px',

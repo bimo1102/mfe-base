@@ -2,11 +2,11 @@ import { Fragment } from 'react';
 import { Link } from 'react-router';
 
 import { Container } from '@/components/container';
-import { Toolbar, ToolbarDescription, ToolbarHeading, ToolbarPageTitle } from '@/partials/toolbar';
 import { PageNavbar } from '@/pages/account';
+import { Toolbar, ToolbarDescription, ToolbarHeading, ToolbarPageTitle } from '@/partials/toolbar';
 
-import { AccountSecurityGetStartedContent } from '.';
 import { useLayout } from '@/providers';
+import { AccountSecurityGetStartedContent } from '.';
 
 const AccountSecurityGetStartedPage = () => {
     const { currentLayout } = useLayout();
@@ -15,7 +15,7 @@ const AccountSecurityGetStartedPage = () => {
         <Fragment>
             <PageNavbar />
 
-            {currentLayout?.name === 'demo1-layout' && (
+            {currentLayout?.name === 'main-layout' && (
                 <Container>
                     <Toolbar>
                         <ToolbarHeading>

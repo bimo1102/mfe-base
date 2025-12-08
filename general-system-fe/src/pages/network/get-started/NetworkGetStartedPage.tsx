@@ -1,16 +1,16 @@
-import { Fragment } from 'react';
-import { Link } from 'react-router';
 import { Container } from '@/components/container';
 import { Toolbar, ToolbarDescription, ToolbarHeading, ToolbarPageTitle } from '@/partials/toolbar';
-import { NetworkGetStartedContent } from '.';
 import { useLayout } from '@/providers';
+import { Fragment } from 'react';
+import { Link } from 'react-router';
+import { NetworkGetStartedContent } from '.';
 
 const NetworkGetStartedPage = () => {
     const { currentLayout } = useLayout();
 
     return (
         <Fragment>
-            {currentLayout?.name === 'demo1-layout' && (
+            {currentLayout?.name === 'main-layout' && (
                 <Container>
                     <Toolbar>
                         <ToolbarHeading>

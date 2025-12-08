@@ -2,11 +2,11 @@ import { Fragment } from 'react';
 import { Link } from 'react-router';
 
 import { Container } from '@/components/container';
-import { Toolbar, ToolbarActions, ToolbarHeading, ToolbarPageTitle } from '@/partials/toolbar';
 import { PageNavbar } from '@/pages/account';
+import { Toolbar, ToolbarActions, ToolbarHeading, ToolbarPageTitle } from '@/partials/toolbar';
 
-import { AccountSecurityLogContent } from '.';
 import { useLayout } from '@/providers';
+import { AccountSecurityLogContent } from '.';
 
 const AccountSecurityLogPage = () => {
     const { currentLayout } = useLayout();
@@ -15,7 +15,7 @@ const AccountSecurityLogPage = () => {
         <Fragment>
             <PageNavbar />
 
-            {currentLayout?.name === 'demo1-layout' && (
+            {currentLayout?.name === 'main-layout' && (
                 <Container>
                     <Toolbar>
                         <ToolbarHeading>
