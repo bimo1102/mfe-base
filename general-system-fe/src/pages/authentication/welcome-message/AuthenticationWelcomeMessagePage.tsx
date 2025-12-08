@@ -1,10 +1,8 @@
+import { Container } from '@/components/container';
+import { ModalWelcomMessage } from '@/partials/modals/welcome-message';
+import { Toolbar, ToolbarDescription, ToolbarHeading, ToolbarPageTitle } from '@/partials/toolbar';
 import { Fragment, useState } from 'react';
 import { Link } from 'react-router';
-import { Container } from '@/components/container';
-import { Toolbar, ToolbarDescription, ToolbarHeading, ToolbarPageTitle } from '@/partials/toolbar';
-import { PageNavbar } from '@/pages/account';
-import { ModalWelcomMessage } from '@/partials/modals/welcome-message';
-import { AccountGetStartedContent } from '@/pages/account/home/get-started';
 
 const AuthenticationWelcomeMessagePage = () => {
     const [profileModalOpen, setProfileModalOpen] = useState(true);
@@ -14,8 +12,6 @@ const AuthenticationWelcomeMessagePage = () => {
 
     return (
         <Fragment>
-            <PageNavbar />
-
             <Container>
                 <Toolbar>
                     <ToolbarHeading>
@@ -37,7 +33,6 @@ const AuthenticationWelcomeMessagePage = () => {
             </Container>
 
             <Container>
-                <AccountGetStartedContent />
                 <ModalWelcomMessage open={profileModalOpen} onOpenChange={handleClose} />
             </Container>
         </Fragment>
