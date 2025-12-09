@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import { Breadcrumbs, useMainLayout } from '../';
-import { MegaMenu } from '../mega-menu';
 import { HeaderLogo, HeaderTopbar } from './';
 
 const Header = () => {
@@ -26,7 +25,8 @@ const Header = () => {
             )}>
             <Container className="flex justify-between items-stretch lg:gap-4">
                 <HeaderLogo />
-                {pathname.includes('/account') ? <Breadcrumbs /> : <MegaMenu />}
+                <Breadcrumbs />
+                {/* {pathname.includes('/account') ? <Breadcrumbs /> : <MegaMenu />} */}
                 <HeaderTopbar />
             </Container>
         </header>
