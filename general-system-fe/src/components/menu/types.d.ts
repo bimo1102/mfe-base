@@ -15,8 +15,6 @@ export type TMenuToggle = 'accordion' | 'dropdown';
 
 export type TMenuItemToggle = Record<string, TMenuToggle> | TMenuToggle;
 
-// export type TMenuDropdown = Partial<Omit<PopperProps, 'children'>>;
-
 export type TMenuTabIndex = number;
 
 export interface IMenuProps {
@@ -53,7 +51,6 @@ export interface IMenuItemProps {
     toggle?: TMenuItemToggle;
     trigger?: TMenuItemTrigger;
     disabled?: boolean;
-    // dropdownProps?: TMenuDropdown;
     dropdownZIndex?: number;
     className?: string;
     closeParentMenu?: CallableFunction;
@@ -157,7 +154,6 @@ export interface IMenuItemConfig {
     icon?: string;
     badge?: string;
     separator?: boolean;
-    // tooltip?: Partial<TooltipProps>;
     path?: string;
     rootPath?: string;
     bullet?: boolean;
