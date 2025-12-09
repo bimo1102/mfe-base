@@ -1,11 +1,14 @@
-import { CircularProgress } from '@mui/material';
+import { LoadingOutlined } from '@ant-design/icons';
+import { Spin } from 'antd';
+
+const antIcon = <LoadingOutlined style={{ fontSize: 32 }} spin />;
 
 const ContentLoader = () => {
-  return (
-    <div className="flex flex-col items-center justify-center self-center relative top-1/2 -translate-x-1/2">
-      <CircularProgress color="primary" />
-    </div>
-  );
+    return (
+        <div className="flex items-center justify-center h-full">
+            <Spin indicator={antIcon} />
+        </div>
+    );
 };
 
 export { ContentLoader };
