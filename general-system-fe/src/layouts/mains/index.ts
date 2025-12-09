@@ -6,5 +6,4 @@ export * from './main';
 export * from './MainLayout';
 export * from './MainLayoutConfig';
 export * from './MainLayoutProvider';
-export * from './mega-menu';
 export * from './sidebar';
