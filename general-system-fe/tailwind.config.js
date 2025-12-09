@@ -448,6 +448,7 @@ module.exports = {
                 'accordion-up': 'accordion-up 0.2s ease-out',
                 'collapsible-down': 'collapsible-down 0.2s ease-out',
                 'collapsible-up': 'collapsible-up 0.2s ease-out',
+                'progress-bar': 'progress-bar 1.5s linear infinite',
             },
             //end
         },
@@ -711,7 +712,6 @@ module.exports = {
         require('./src/plugins/components/range'),
         require('./src/plugins/components/container'),
         require('./src/plugins/components/image-input'),
-        require('./src/plugins/components/modal'),
         require('./src/plugins/components/drawer'),
         require('./src/plugins/components/tooltip'),
         require('./src/plugins/components/popover'),

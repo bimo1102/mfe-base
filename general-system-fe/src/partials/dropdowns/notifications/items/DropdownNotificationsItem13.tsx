@@ -1,6 +1,6 @@
+import { CommonAvatars } from '@/partials/common';
 import { toAbsoluteUrl } from '@/utils';
 import { Link } from 'react-router';
-import { CommonAvatars } from '@/partials/common';
 
 const DropdownNotificationsItem13 = () => {
     return (
@@ -44,7 +44,7 @@ const DropdownNotificationsItem13 = () => {
 
                         <CommonAvatars
                             size="size-6"
-                            group={[{ path: '/media/avatars/300-3.png' }, { path: '/media/avatars/300-2.png' }]}
+                            group={[{ path: '/media/avatars/300-3.png' }, { path: '/media/avatars/blank.png' }]}
                         />
                     </div>
 

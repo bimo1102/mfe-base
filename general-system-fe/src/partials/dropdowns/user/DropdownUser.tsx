@@ -32,7 +32,7 @@ const DropdownUser = ({ menuItemRef }: IDropdownUserProps) => {
                 <div className="flex items-center gap-2">
                     <img
                         className="size-9 rounded-full border-2 border-success"
-                        src={toAbsoluteUrl('/media/avatars/300-2.png')}
+                        src={toAbsoluteUrl('/media/avatars/blank.png')}
                         alt=""
                     />
                     <div className="flex flex-col gap-1.5">

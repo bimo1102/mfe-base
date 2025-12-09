@@ -1,15 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useRef, useState } from 'react';
-import { getHeight, toAbsoluteUrl } from '@/utils';
-import { Link } from 'react-router';
 import { KeenIcon } from '@/components';
-import { Menu, MenuItem, MenuLink, MenuSub, MenuTitle, MenuToggle, MenuArrow, MenuIcon } from '@/components/menu';
-import { useLanguage } from '@/i18n';
+import { Menu, MenuArrow, MenuIcon, MenuItem, MenuLink, MenuSub, MenuTitle, MenuToggle } from '@/components/menu';
 import { useViewport } from '@/hooks';
+import { useLanguage } from '@/i18n';
 import { CommonAvatars } from '@/partials/common';
-import { IDropdownChatProps, IDropdownMessage } from './types';
-import { DropdownChatMessageOut } from './DropdownChatMessageOut';
+import { getHeight, toAbsoluteUrl } from '@/utils';
+import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router';
 import { DropdownChatMessageIn } from './DropdownChatMessageIn';
+import { DropdownChatMessageOut } from './DropdownChatMessageOut';
+import { IDropdownChatProps, IDropdownMessage } from './types';
 
 const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
     const headerRef = useRef<HTMLDivElement>(null);
@@ -76,7 +76,7 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
                             group={[
                                 { path: '/media/avatars/300-4.png' },
                                 { path: '/media/avatars/300-1.png' },
-                                { path: '/media/avatars/300-2.png' },
+                                { path: '/media/avatars/blank.png' },
                                 {
                                     fallback: '+10',
                                     variant: 'text-success-inverse size-6 ring-success-light bg-success',
@@ -192,7 +192,7 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
                 in: true,
             },
             {
-                avatar: '/media/avatars/300-2.png',
+                avatar: '/media/avatars/blank.png',
                 text: 'This is excellent news!',
                 time: '14:08',
                 read: true,
@@ -213,14 +213,14 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
                 in: true,
             },
             {
-                avatar: '/media/avatars/300-2.png',
+                avatar: '/media/avatars/blank.png',
                 text: "Haven't seen the build yet, I'll look now.",
                 time: '15:52',
                 read: false,
                 out: true,
             },
             {
-                avatar: '/media/avatars/300-2.png',
+                avatar: '/media/avatars/blank.png',
                 text: 'Checking the build now',
                 time: '15:52',
                 read: false,
@@ -302,7 +302,7 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
         return (
             <div className="relative grow mx-5 mb-2.5">
                 <img
-                    src={toAbsoluteUrl('/media/avatars/300-2.png')}
+                    src={toAbsoluteUrl('/media/avatars/blank.png')}
                     className="rounded-full size-[30px] absolute start-0 top-2/4 -translate-y-2/4 ms-2.5"
                     alt=""
                 />
