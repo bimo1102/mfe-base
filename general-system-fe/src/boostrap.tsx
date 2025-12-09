@@ -6,7 +6,7 @@ import { App } from './App';
 import { setupAxios } from './auth';
 import { ProvidersWrapper } from './providers';
 
-// import '@/components/keenicons/assets/styles.css';
+import '@/components/keenicons/assets/styles.css';
 import '@/styles/globals.css';
 
 setupAxios(axios);

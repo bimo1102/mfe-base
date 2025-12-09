@@ -1,13 +1,12 @@
 import { Container } from '@/components/container';
 import clsx from 'clsx';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router';
+// import { useLocation } from 'react-router';
 import { Breadcrumbs, useMainLayout } from '../';
 import { HeaderLogo, HeaderTopbar } from './';
-
 const Header = () => {
     const { headerSticky } = useMainLayout();
-    const { pathname } = useLocation();
+    // const { pathname } = useLocation();
 
     useEffect(() => {
         if (headerSticky) {
@@ -26,6 +25,7 @@ const Header = () => {
             <Container className="flex justify-between items-stretch lg:gap-4">
                 <HeaderLogo />
                 <Breadcrumbs />
+
                 {/* {pathname.includes('/account') ? <Breadcrumbs /> : <MegaMenu />} */}
                 <HeaderTopbar />
             </Container>

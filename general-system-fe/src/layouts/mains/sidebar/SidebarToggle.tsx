@@ -42,6 +42,7 @@ const SidebarToggle = () => {
                 <div className="hidden [html.dark_&]:block">
                     <button className={clsx(buttonBaseClass, 'border-gray-300')}>
                         <KeenIcon icon="black-left-line" className={iconClass} />
+                        {/* <KeenIconsComponent className={iconClass} type="black-left-line" name="filled" /> */}
                     </button>
                 </div>
                 <div className="[html.dark_&]:hidden light">{lightToggle()}</div>
