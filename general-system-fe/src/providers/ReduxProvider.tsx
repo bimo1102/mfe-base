@@ -1,10 +1,10 @@
+import { Spin } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { Provider } from 'react-redux';
-import { Spin } from 'antd';
 
 type Props = { children: React.ReactNode };
 
-const ReduxProvider: React.FC<Props> = ({ children }) => {
+export const ReduxProvider: React.FC<Props> = ({ children }) => {
     const [hostStore, setHostStore] = useState<any>(null);
 
     useEffect(() => {
@@ -27,5 +27,3 @@ const ReduxProvider: React.FC<Props> = ({ children }) => {
         </Spin>
     );
 };
-
-export default ReduxProvider;
