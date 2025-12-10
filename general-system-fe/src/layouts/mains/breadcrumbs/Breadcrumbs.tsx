@@ -20,10 +20,7 @@ const Breadcrumbs = () => {
                     <span className={clsx(item.active ? 'text-gray-700' : 'text-gray-700')} key={`item-${index}`}>
                         {item.title}
                     </span>
-                    {!last && (
-                        // <KeenIcon icon="right" className="text-gray-500 text-3xs" key={`separator-${index}`} />
-                        <KeenIconsComponent name="right" type="duotone" className="text-gray-500 text-3xs" />
-                    )}
+                    {!last && <KeenIconsComponent name="right" type="duotone" className="text-gray-500 text-3xs" />}
                 </Fragment>
             );
         });

@@ -1,4 +1,3 @@
-import { KeenIcon } from '@/components';
 import {
     Dialog,
     DialogBody,
@@ -9,6 +8,7 @@ import {
 } from '@/components/ui/dialog';
 import { useViewport } from '@/hooks';
 import { useLanguage } from '@/i18n';
+import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { forwardRef, useEffect, useState } from 'react';
 import { ModalSearchEmpty } from './';
 interface IModalSearchProps {
@@ -35,7 +35,8 @@ const ModalSearch = forwardRef<HTMLDivElement, IModalSearchProps>(({ open, onOpe
                 <DialogHeader className="py-4">
                     <DialogTitle></DialogTitle>
                     <DialogDescription></DialogDescription>
-                    <KeenIcon icon="magnifier" className="text-gray-700 text-xl" />
+                    <KeenIconsComponent className="text-gray-700 text-xl" type="duotone" name="magnifier" />
+
                     <input
                         type="text"
                         name="query"

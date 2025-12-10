@@ -1,12 +1,11 @@
 import { Container } from '@/components/container';
-import { Toolbar, ToolbarActions, ToolbarHeading } from '@/layouts/mains/toolbar';
-import { Fragment } from 'react';
-import { MainLightSidebarContent } from '../light-sidebar';
-
+import { Toolbar } from '@/layouts/mains/toolbar';
+import React, { Fragment, Suspense } from 'react';
 const MainDarkSidebarPage = () => {
+    const ServiceCategoryModule = React.lazy(() => import('GeneralReactModule/service-category'));
     return (
         <Fragment>
-            <Container>
+            {/* <Container>
                 <Toolbar>
                     <ToolbarHeading title="Dashboard" description="Central Hub for Personal Customization" />
                     <ToolbarActions></ToolbarActions>
@@ -15,7 +14,14 @@ const MainDarkSidebarPage = () => {
 
             <Container>
                 <MainLightSidebarContent />
-            </Container>
+            </Container> */}
+            <Suspense fallback="Loading service category...">
+                <Container>
+                    <Toolbar>
+                        <ServiceCategoryModule />
+                    </Toolbar>
+                </Container>
+            </Suspense>
         </Fragment>
     );
 };

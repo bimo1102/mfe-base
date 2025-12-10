@@ -1,8 +1,7 @@
+import { useLayout } from '@/providers';
+import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { useState } from 'react';
 import { Link } from 'react-router';
-import { KeenIcon } from '@/components';
-import { useLayout } from '@/providers';
-
 const ResetPasswordEnterEmail = () => {
     const { currentLayout } = useLayout();
     const [searchInput, setSearchInput] = useState('');
@@ -34,7 +33,7 @@ const ResetPasswordEnterEmail = () => {
                     }
                     className="btn btn-primary flex justify-center grow">
                     Continue
-                    <KeenIcon icon="black-right" />
+                    <KeenIconsComponent className="" type="duotone" name="black-right" />
                 </Link>
             </form>
         </div>

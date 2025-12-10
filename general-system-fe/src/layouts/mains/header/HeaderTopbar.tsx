@@ -1,12 +1,10 @@
 import { Menu, MenuItem, MenuToggle } from '@/components';
-import { KeenIcon } from '@/components/keenicons';
 import { useLanguage } from '@/i18n';
-// import { DropdownChat } from '@/partials/dropdowns/chat';
 import { DropdownUser } from '@/partials/dropdowns/user';
 import { ModalSearch } from '@/partials/modals/search/ModalSearch';
 import { toAbsoluteUrl } from '@/utils';
+import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { useRef, useState } from 'react';
-
 const HeaderTopbar = () => {
     const { isRTL } = useLanguage();
     const itemUserRef = useRef<any>(null);
@@ -26,7 +24,7 @@ const HeaderTopbar = () => {
             <button
                 onClick={handleOpen}
                 className="btn btn-icon btn-icon-lg size-9 rounded-full hover:bg-primary-light hover:text-primary text-gray-500">
-                <KeenIcon icon="magnifier" />
+                <KeenIconsComponent className="" type="duotone" name="magnifier" />
             </button>
             <ModalSearch open={searchModalOpen} onOpenChange={handleClose} />
 

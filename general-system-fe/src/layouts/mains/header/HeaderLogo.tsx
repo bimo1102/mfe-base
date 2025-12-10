@@ -1,7 +1,6 @@
-import { KeenIcon } from '@/components/keenicons';
 import { toAbsoluteUrl } from '@/utils';
+import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { Link } from 'react-router';
-
 import { useMainLayout } from '../';
 
 const HeaderLogo = () => {
@@ -23,7 +22,7 @@ const HeaderLogo = () => {
 
             <div className="flex items-center">
                 <button type="button" className="btn btn-icon btn-light btn-clear btn-sm" onClick={handleSidebarOpen}>
-                    <KeenIcon icon="menu" />
+                    <KeenIconsComponent className="" type="duotone" name="menu" />
                 </button>
 
                 {megaMenuEnabled && (
@@ -31,7 +30,7 @@ const HeaderLogo = () => {
                         type="button"
                         className="btn btn-icon btn-light btn-clear btn-sm"
                         onClick={handleMegaMenuOpen}>
-                        <KeenIcon icon="burger-menu-2" />
+                        <KeenIconsComponent className="" type="duotone" name="burger-menu-2" />
                     </button>
                 )}
             </div>

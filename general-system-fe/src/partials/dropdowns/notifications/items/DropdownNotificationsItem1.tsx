@@ -1,7 +1,7 @@
 import { toAbsoluteUrl } from '@/utils';
+import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
+import { useState } from 'react';
 import { Link } from 'react-router';
-import { KeenIcon } from '@/components';
-import { ChangeEvent, useState } from 'react';
 
 interface IDropdownNotificationsItemProps {
     userName: string;
@@ -71,7 +71,7 @@ const DropdownNotificationsItem1 = ({
                             value={emailInput}
                         />
                         <button className="btn btn-icon">
-                            <KeenIcon icon="picture" />
+                            <KeenIconsComponent className="" type="duotone" name="picture" />
                         </button>
                     </label>
                 </div>

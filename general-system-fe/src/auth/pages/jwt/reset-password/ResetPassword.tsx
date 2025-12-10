@@ -1,14 +1,14 @@
+import { useAuthContext } from '@/auth/useAuthContext';
+import { Alert } from '@/components';
+import { useLayout } from '@/providers';
+import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
+import { AxiosError } from 'axios';
 import clsx from 'clsx';
 import { useFormik } from 'formik';
 import { useState } from 'react';
 import { Link } from 'react-router';
-import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
-
-import { useAuthContext } from '@/auth/useAuthContext';
-import { Alert, KeenIcon } from '@/components';
-import { useLayout } from '@/providers';
-import { AxiosError } from 'axios';
+import * as Yup from 'yup';
 
 const initialValues = {
     email: '',
@@ -112,7 +112,7 @@ const ResetPassword = () => {
                     <Link
                         to={currentLayout?.name === 'auth-branded' ? '/auth/login' : '/auth/classic/login'}
                         className="flex items-center justify-center text-sm gap-2 text-gray-700 hover:text-primary">
-                        <KeenIcon icon="black-left" />
+                        <KeenIconsComponent className="" type="duotone" name="black-left" />
                         Back to Login
                     </Link>
                 </div>

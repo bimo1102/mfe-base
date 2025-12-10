@@ -1,7 +1,7 @@
+import { toAbsoluteUrl } from '@/utils';
+import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { useState } from 'react';
 import { Link } from 'react-router';
-import { toAbsoluteUrl } from '@/utils';
-import { KeenIcon } from '@/components';
 
 const TwoFactorAuth = () => {
     const [codeInputs, setCodeInputs] = useState(Array(6).fill(''));
@@ -58,7 +58,7 @@ const TwoFactorAuth = () => {
                 <Link
                     to="/auth/login"
                     className="flex items-center justify-center text-sm gap-2 text-gray-700 hover:text-primary">
-                    <KeenIcon icon="black-left" />
+                    <KeenIconsComponent className="" name="black-left" type="duotone" />
                     Back to Login
                 </Link>
             </form>

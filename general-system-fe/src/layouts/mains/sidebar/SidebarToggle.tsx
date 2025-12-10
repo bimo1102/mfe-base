@@ -1,5 +1,5 @@
-import { KeenIcon } from '@/components';
 import { useMatchPath } from '@/hooks';
+import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import clsx from 'clsx';
 import { useMainLayout } from '../MainLayoutProvider';
 
@@ -30,7 +30,7 @@ const SidebarToggle = () => {
                 onClick={handleClick}
                 className={clsx(buttonBaseClass, 'border-gray-200 dark:border-gray-300')}
                 aria-label="Toggle sidebar">
-                <KeenIcon icon="black-left-line" className={iconClass} />
+                <KeenIconsComponent className={iconClass} type="duotone" name="black-left-line" />
             </button>
         );
     };
@@ -40,8 +40,7 @@ const SidebarToggle = () => {
             <div onClick={handleClick}>
                 <div className="hidden [html.dark_&]:block">
                     <button className={clsx(buttonBaseClass, 'border-gray-300')}>
-                        <KeenIcon icon="black-left-line" className={iconClass} />
-                        {/* <KeenIconsComponent className={iconClass} type="black-left-line" name="filled" /> */}
+                        <KeenIconsComponent className={iconClass} type="duotone" name="black-left-line" />
                     </button>
                 </div>
                 <div className="[html.dark_&]:hidden light">{lightToggle()}</div>

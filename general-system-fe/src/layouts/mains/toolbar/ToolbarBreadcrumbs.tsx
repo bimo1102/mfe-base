@@ -1,8 +1,8 @@
-import { Fragment } from 'react';
-import { KeenIcon, useMenuBreadcrumbs } from '@/components';
-import { Link } from 'react-router';
+import { useMenuBreadcrumbs } from '@/components';
 import { useMenus } from '@/providers';
-import { useLocation } from 'react-router';
+import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
+import { Fragment } from 'react';
+import { Link, useLocation } from 'react-router';
 
 const ToolbarBreadcrumbs = () => {
     const { getMenuConfig } = useMenus();
@@ -23,7 +23,9 @@ const ToolbarBreadcrumbs = () => {
                                 {item.title}
                             </span>
                         )}
-                        {index !== items.length - 1 && <KeenIcon icon="right" className="text-gray-500 text-3xs" />}
+                        {index !== items.length - 1 && (
+                            <KeenIconsComponent className="text-gray-500 text-3xs" type="duotone" name="right" />
+                        )}
                     </Fragment>
                 ))}
             </div>
