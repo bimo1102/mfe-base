@@ -9,16 +9,7 @@
 
 module.exports = {
     content: ['index.html', './src/**/*.{ts,tsx}'],
-    safelist: [
-        'main',
-        'hidden',
-        'ki-filled',
-        'ki-outline',
-        'ki-duotone',
-        'ki-solid',
-        { pattern: /^apexcharts-.*$/ },
-        { pattern: /^leaflet-.*$/ },
-    ],
+    safelist: ['main', 'hidden', 'ki-filled', 'ki-outline', 'ki-duotone', 'ki-solid', { pattern: /^leaflet-.*$/ }],
     darkMode: 'class',
     theme: {
         extend: {
@@ -725,7 +716,6 @@ module.exports = {
         require('./src/plugins/components/rating'),
         require('./src/plugins/components/scrollable'),
         require('./src/plugins/components/progress'),
-        require('./src/plugins/components/apexcharts'),
         require('./src/plugins/components/leaflet'),
     ],
 };
