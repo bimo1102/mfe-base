@@ -15,10 +15,6 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.jsx', '.js'],
         alias: {
             '@share-system-fe': path.resolve(__dirname, './../share-system-fe'),
-            '@shareds': path.resolve(__dirname, './src/app/shareds'),
-            '@modules': path.resolve(__dirname, './src/app/modules'),
-            '@routing': path.resolve(__dirname, './src/app/routing'),
-            '@app': path.resolve(__dirname, './src/app'),
             '@': path.resolve(__dirname, './src'),
         },
         modules: [path.resolve(__dirname, 'node_modules')],

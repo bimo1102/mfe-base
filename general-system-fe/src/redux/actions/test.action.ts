@@ -1,7 +1,7 @@
+import additionalInformationService from '@/services/auth.service';
 import { mergeLoadingActions } from '@share-system-fe/react/providers/context/common.action';
 import { KeyValueTypeIntModel } from '@share-system-fe/types/common.type';
 import { Dispatch } from 'GeneralApplication/store';
-import additionalInformationService from 'src/services/auth.service';
 
 export const additionalInformationGetById = (request: any) => async (dispatch: Dispatch) => {
     return mergeLoadingActions<{

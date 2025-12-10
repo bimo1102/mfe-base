@@ -8,6 +8,6 @@ module.exports = {
         GeneralReactModule: `GeneralReactModule@${process.env.GeneralReactModuleUrl}/remoteEntry.js${params}`,
     },
     exposes: {
-        './store': '@shareds/providers/redux/store.tsx',
+        './store': '@/redux/store.tsx',
     },
 };

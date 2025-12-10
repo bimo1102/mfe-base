@@ -23,11 +23,7 @@
         "target": "ES2015",
         "paths": {
             "@share-system-fe/*": ["../share-system-fe/*"],
-            "@shareds/*": ["./src/app/shareds/*"],
-            "@modules/*": ["./src/app/modules/*"],
-            "@routing/*": ["./src/app/routing/*"],
-            "@app/*": ["./src/app/*"],
-            "@/*": ["./src/*"],
+            "@/*": ["./src/*"]
         }
     },
     "include": ["./src"],

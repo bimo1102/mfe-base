@@ -1,5 +1,3 @@
-// import { ChannelStats, EarningsChart, EntryCallout, Highlights, TeamMeeting } from './blocks';
-
 const MainLightSidebarContent = () => {
     return <div className="grid gap-5 lg:gap-7.5"></div>;
 };

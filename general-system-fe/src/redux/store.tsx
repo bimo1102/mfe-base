@@ -1,4 +1,4 @@
-import { combineReducers, configureStore, Reducer, Action } from '@reduxjs/toolkit';
+import { Action, configureStore, Reducer } from '@reduxjs/toolkit';
 import commonReducer from '@share-system-fe/react/providers/context/common.reducer';
 import { createReducerManager, ReducerManager } from './reducerManager';
 
@@ -81,4 +81,4 @@ export function getReducers() {
     return reducerManager.getReducers();
 }
 
-export { store, reducerManager };
+export { reducerManager, store };

@@ -6,7 +6,6 @@ import { useMainLayout } from '../MainLayoutProvider';
 const SidebarToggle = () => {
     const { layout, setSidebarCollapse } = useMainLayout();
     const { match } = useMatchPath('/dark-sidebar');
-
     const handleClick = () => {
         if (layout.options.sidebar.collapse) {
             setSidebarCollapse(false);
