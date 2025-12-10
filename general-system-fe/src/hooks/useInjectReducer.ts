@@ -1,6 +1,6 @@
+import { ejectReducer, hasReducer, injectReducer } from '@/redux/store';
 import { useEffect } from 'react';
-import { Reducer, Action } from 'redux';
-import { injectReducer, ejectReducer, hasReducer } from '../providers/redux/store';
+import { Action, Reducer } from 'redux';
 
 /**
  * Hook for injecting/ejecting reducers dynamically (for remote modules)
