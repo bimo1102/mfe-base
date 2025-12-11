@@ -1,5 +1,5 @@
+import { KeenIcon } from '@/components';
 import { useLayout } from '@/providers';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { useState } from 'react';
 import { Link } from 'react-router';
 const ResetPasswordEnterEmail = () => {
@@ -33,7 +33,7 @@ const ResetPasswordEnterEmail = () => {
                     }
                     className="btn btn-primary flex justify-center grow">
                     Continue
-                    <KeenIconsComponent className="" type="duotone" name="black-right" />
+                    <KeenIcon icon="black-right" />
                 </Link>
             </form>
         </div>

@@ -2,9 +2,9 @@ import clsx from 'clsx';
 import { Fragment } from 'react';
 import { useLocation } from 'react-router';
 
+import { KeenIcon } from '@/components';
 import { TMenuBreadcrumbs, useMenuBreadcrumbs } from '@/components/menu';
 import { useMenus } from '@/providers';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 const Breadcrumbs = () => {
     const { pathname } = useLocation();
     const { getMenuConfig } = useMenus();
@@ -20,7 +20,7 @@ const Breadcrumbs = () => {
                     <span className={clsx(item.active ? 'text-gray-700' : 'text-gray-700')} key={`item-${index}`}>
                         {item.title}
                     </span>
-                    {!last && <KeenIconsComponent name="right" type="duotone" className="text-gray-500 text-3xs" />}
+                    {!last && <KeenIcon icon="right" className="text-gray-500 text-3xs" key={`separator-${index}`} />}{' '}
                 </Fragment>
             );
         });

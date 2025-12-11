@@ -1,5 +1,5 @@
+import { KeenIcon } from '@/components';
 import { toAbsoluteUrl } from '@/utils';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { Link } from 'react-router';
 
 const DropdownNotificationsItem16 = () => {
@@ -30,7 +30,7 @@ const DropdownNotificationsItem16 = () => {
                 </div>
 
                 <div className="card shadow-none flex items-center flex-row gap-1.5 px-2.5 py-1.5 rounded-lg bg-light-active">
-                    <KeenIconsComponent className="text-base text-success" type="duotone" name="user-tick" />
+                    <KeenIcon icon="user-tick" className="text-base text-success" />
 
                     <span className="font-medium text-success text-2sm">You allowed Aaron to view</span>
                 </div>

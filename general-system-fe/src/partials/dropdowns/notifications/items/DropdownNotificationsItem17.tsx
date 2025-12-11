@@ -1,5 +1,5 @@
+import { KeenIcon } from '@/components';
 import { toAbsoluteUrl } from '@/utils';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { Link } from 'react-router';
 
 const DropdownNotificationsItem17 = () => {
@@ -31,7 +31,7 @@ const DropdownNotificationsItem17 = () => {
 
                 <div className="flex flex-wrap gap-2.5">
                     <button className="btn btn-sm btn-light">
-                        <KeenIconsComponent className="" type="duotone" name="check-circle" />
+                        <KeenIcon icon="check-circle" />
                         Connected
                     </button>
                     <button className="btn btn-dark btn-sm">Go to profile</button>

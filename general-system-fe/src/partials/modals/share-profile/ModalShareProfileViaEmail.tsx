@@ -1,4 +1,4 @@
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
+import { KeenIcon } from '@/components';
 import { useState } from 'react';
 
 const ModalShareProfileViaEmail = () => {
@@ -7,7 +7,7 @@ const ModalShareProfileViaEmail = () => {
         <div className="flex flex-col px-5 gap-2.5">
             <div className="flex flex-center gap-1">
                 <label className="text-gray-900 font-semibold text-2sm">Share via email</label>
-                <KeenIconsComponent className="text-gray-500 text-2sm" type="duotone" name="information-2" />
+                <KeenIcon icon="information-2" className="text-gray-500 text-2sm" />
             </div>
 
             <div className="flex flex-center gap-2.5">

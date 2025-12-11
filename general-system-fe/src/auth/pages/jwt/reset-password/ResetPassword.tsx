@@ -1,7 +1,6 @@
 import { useAuthContext } from '@/auth/useAuthContext';
-import { Alert } from '@/components';
+import { Alert, KeenIcon } from '@/components';
 import { useLayout } from '@/providers';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { AxiosError } from 'axios';
 import clsx from 'clsx';
 import { useFormik } from 'formik';
@@ -112,7 +111,7 @@ const ResetPassword = () => {
                     <Link
                         to={currentLayout?.name === 'auth-branded' ? '/auth/login' : '/auth/classic/login'}
                         className="flex items-center justify-center text-sm gap-2 text-gray-700 hover:text-primary">
-                        <KeenIconsComponent className="" type="duotone" name="black-left" />
+                        <KeenIcon icon="black-left" />
                         Back to Login
                     </Link>
                 </div>

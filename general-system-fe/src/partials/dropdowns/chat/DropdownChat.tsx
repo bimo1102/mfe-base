@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import { KeenIcon } from '@/components';
 import { Menu, MenuArrow, MenuIcon, MenuItem, MenuLink, MenuSub, MenuTitle, MenuToggle } from '@/components/menu';
 import { useViewport } from '@/hooks';
 import { useLanguage } from '@/i18n';
 import { CommonAvatars } from '@/partials/common';
 import { getHeight, toAbsoluteUrl } from '@/utils';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import { DropdownChatMessageIn } from './DropdownChatMessageIn';
@@ -45,7 +45,7 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
                 <div className="flex items-center justify-between gap-2.5 text-sm text-gray-900 font-semibold px-5 py-2.5">
                     Chat
                     <button className="btn btn-sm btn-icon btn-light btn-clear shrink-0" onClick={handleClose}>
-                        <KeenIconsComponent className="" type="duotone" name="cross" />
+                        <KeenIcon icon="cross" />
                     </button>
                 </div>
                 <div className="border-b border-b-gray-200"></div>
@@ -100,13 +100,13 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
                                     ],
                                 }}>
                                 <MenuToggle className="btn btn-sm btn-icon btn-light btn-clear">
-                                    <KeenIconsComponent className="" type="duotone" name="dots-vertical" />
+                                    <KeenIcon icon="dots-vertical" />
                                 </MenuToggle>
                                 <MenuSub className="menu-default" rootClassName="w-full max-w-[175px] pt-2">
                                     <MenuItem path="/account/members/teams">
                                         <MenuLink>
                                             <MenuIcon>
-                                                <KeenIconsComponent className="" type="duotone" name="users" />
+                                                <KeenIcon icon="users" />
                                             </MenuIcon>
                                             <MenuTitle>Invite Users</MenuTitle>
                                         </MenuLink>
@@ -127,14 +127,13 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
                                         }}>
                                         <MenuLink>
                                             <MenuIcon>
-                                                <KeenIconsComponent className="" type="duotone" name="people" />
+                                                <KeenIcon icon="people" />
                                             </MenuIcon>
                                             <MenuTitle>Team</MenuTitle>
                                             <MenuArrow>
-                                                <KeenIconsComponent
+                                                <KeenIcon
+                                                    icon="right"
                                                     className="text-3xs rtl:transform rtl:rotate-180"
-                                                    type="duotone"
-                                                    name="right"
                                                 />
                                             </MenuArrow>
                                         </MenuLink>
@@ -142,11 +141,7 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
                                             <MenuItem path="/account/members/import-members">
                                                 <MenuLink>
                                                     <MenuIcon>
-                                                        <KeenIconsComponent
-                                                            className=""
-                                                            type="duotone"
-                                                            name="shield-search"
-                                                        />
+                                                        <KeenIcon icon="shield-search" />
                                                     </MenuIcon>
                                                     <MenuTitle>Find Members</MenuTitle>
                                                 </MenuLink>
@@ -154,11 +149,7 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
                                             <MenuItem path="/account/members/import-members">
                                                 <MenuLink>
                                                     <MenuIcon>
-                                                        <KeenIconsComponent
-                                                            className=""
-                                                            type="duotone"
-                                                            name="calendar"
-                                                        />
+                                                        <KeenIcon icon="calendar" />
                                                     </MenuIcon>
                                                     <MenuTitle>Meetings</MenuTitle>
                                                 </MenuLink>
@@ -166,11 +157,7 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
                                             <MenuItem path="/account/members/import-members">
                                                 <MenuLink>
                                                     <MenuIcon>
-                                                        <KeenIconsComponent
-                                                            className=""
-                                                            type="duotone"
-                                                            name="filter-edit"
-                                                        />
+                                                        <KeenIcon icon="filter-edit" />
                                                     </MenuIcon>
                                                     <MenuTitle>Group Settings</MenuTitle>
                                                 </MenuLink>
@@ -180,7 +167,7 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
                                     <MenuItem path="/account/security/privacy-settings">
                                         <MenuLink>
                                             <MenuIcon>
-                                                <KeenIconsComponent className="" type="duotone" name="setting-3" />
+                                                <KeenIcon icon="setting-3" />
                                             </MenuIcon>
                                             <MenuTitle>Group Settings</MenuTitle>
                                         </MenuLink>
@@ -330,7 +317,7 @@ const DropdownChat = ({ menuTtemRef }: IDropdownChatProps) => {
 
                 <div className="flex items-center gap-2.5 absolute end-3 top-1/2 -translate-y-1/2">
                     <button className="btn btn-sm btn-icon btn-light btn-clear">
-                        <KeenIconsComponent className="" type="duotone" name="exit-up" />
+                        <KeenIcon icon="exit-up" />
                     </button>
                     <button className="btn btn-dark btn-sm">Send</button>
                 </div>

@@ -1,5 +1,5 @@
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import React from 'react';
+import { KeenIcon } from '../keenicons';
 interface IAlertProps {
     /** Specifies the variant style of the alert */
     variant?: 'success' | 'info' | 'danger' | 'primary' | 'warning';
@@ -24,9 +24,9 @@ const Alert: React.FC<IAlertProps> = ({ variant = 'primary', icon = 'information
         <div
             className={`flex items-center gap-2.5 border rounded-md p-3 ${variantStyles[variant]} ${className}`}
             role="alert">
-            <KeenIconsComponent
-                name={icon}
-                type="solid"
+            <KeenIcon
+                icon={icon}
+                style="solid"
                 className={`text-lg leading-0 ${variantStyles[variant].split(' ')[2]}`}
                 aria-label={icon}
             />

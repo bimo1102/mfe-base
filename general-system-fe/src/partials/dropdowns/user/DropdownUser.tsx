@@ -1,9 +1,9 @@
 import { useAuthContext } from '@/auth';
+import { KeenIcon } from '@/components';
 import { MenuIcon, MenuItem, MenuLink, MenuSeparator, MenuSub, MenuTitle } from '@/components/menu';
 import { useLanguage } from '@/i18n';
 import { useSettings } from '@/providers/SettingsProvider';
 import { toAbsoluteUrl } from '@/utils';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { ChangeEvent, Fragment } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router';
@@ -61,7 +61,7 @@ const DropdownUser = ({ menuItemRef }: IDropdownUserProps) => {
                     <MenuItem>
                         <MenuLink path="/account/home/user-profile">
                             <MenuIcon>
-                                <KeenIconsComponent className="" type="duotone" name="profile-circle" />
+                                <KeenIcon icon="profile-circle" />
                             </MenuIcon>
                             <MenuTitle>
                                 <FormattedMessage id="USER.MENU.MY_PROFILE" />
@@ -81,7 +81,7 @@ const DropdownUser = ({ menuItemRef }: IDropdownUserProps) => {
                 <div className="menu-item mb-0.5">
                     <div className="menu-link">
                         <span className="menu-icon">
-                            <KeenIconsComponent className="" type="duotone" name="moon" />
+                            <KeenIcon icon="moon" />
                         </span>
                         <span className="menu-title">
                             <FormattedMessage id="USER.MENU.DARK_MODE" />

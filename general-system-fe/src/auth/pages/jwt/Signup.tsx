@@ -4,10 +4,9 @@ import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 
-import { Alert } from '@/components';
+import { Alert, KeenIcon } from '@/components';
 import { useLayout } from '@/providers';
 import { toAbsoluteUrl } from '@/utils';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { useAuthContext } from '../../useAuthContext';
 const initialValues = {
     email: '',
@@ -156,16 +155,8 @@ const Signup = () => {
                             )}
                         />
                         <button className="btn btn-icon" onClick={togglePassword}>
-                            <KeenIconsComponent
-                                className={clsx('text-gray-500', { hidden: showPassword })}
-                                type="duotone"
-                                name="eye"
-                            />
-                            <KeenIconsComponent
-                                className={clsx('text-gray-500', { hidden: !showPassword })}
-                                type="duotone"
-                                name="eye-slash"
-                            />
+                            <KeenIcon icon="eye" className={clsx('text-gray-500', { hidden: showPassword })} />
+                            <KeenIcon icon="eye-slash" className={clsx('text-gray-500', { hidden: !showPassword })} />
                         </button>
                     </label>
                     {formik.touched.password && formik.errors.password && (
@@ -194,15 +185,10 @@ const Signup = () => {
                             )}
                         />
                         <button className="btn btn-icon" onClick={toggleConfirmPassword}>
-                            <KeenIconsComponent
-                                className={clsx('text-gray-500', { hidden: showConfirmPassword })}
-                                type="filled"
-                                name="eye"
-                            />
-                            <KeenIconsComponent
+                            <KeenIcon icon="eye" className={clsx('text-gray-500', { hidden: showConfirmPassword })} />
+                            <KeenIcon
+                                icon="eye-slash"
                                 className={clsx('text-gray-500', { hidden: !showConfirmPassword })}
-                                type="filled"
-                                name="eye-slash"
                             />
                         </button>
                     </label>

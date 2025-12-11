@@ -1,4 +1,4 @@
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
+import { KeenIcon } from '@/components';
 import { useState } from 'react';
 
 const ModalShareProfileViaLink = () => {
@@ -7,7 +7,7 @@ const ModalShareProfileViaLink = () => {
         <div className="flex flex-col px-5 gap-2.5">
             <div className="flex flex-center gap-1">
                 <label className="text-gray-900 font-semibold text-2sm">Share read-only link</label>
-                <KeenIconsComponent name="information-2" className="text-gray-500 text-2sm" type="duotone" />
+                <KeenIcon icon="information-2" className="text-gray-500 text-2sm" />
             </div>
 
             <label className="input">
@@ -19,7 +19,7 @@ const ModalShareProfileViaLink = () => {
                     placeholder="https://metronic.com/profiles/x7g2vA3kZ5"
                 />
                 <button className="btn btn-icon">
-                    <KeenIconsComponent name="copy" type="duotone" className="" />
+                    <KeenIcon icon="copy" />
                 </button>
             </label>
         </div>

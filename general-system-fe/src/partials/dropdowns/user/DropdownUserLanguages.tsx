@@ -1,6 +1,6 @@
+import { KeenIcon } from '@/components';
 import { MenuBadge, MenuIcon, MenuItem, MenuLink, MenuSub, MenuTitle } from '@/components/menu';
 import { I18N_LANGUAGES, TLanguage, useLanguage } from '@/i18n';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import clsx from 'clsx';
 import { FormattedMessage } from 'react-intl';
 
@@ -35,7 +35,7 @@ const DropdownUserLanguages = ({ menuItemRef }: IDropdownUserLanguagesProps) => 
                     <MenuTitle>{item.label}</MenuTitle>
                     {item.code === currentLanguage.code && (
                         <MenuBadge>
-                            <KeenIconsComponent className="text-success text-base" type="duotone" name="check-circle" />
+                            <KeenIcon icon="check-circle" style="solid" className="text-success text-base" />
                         </MenuBadge>
                     )}
                 </MenuLink>
@@ -60,7 +60,7 @@ const DropdownUserLanguages = ({ menuItemRef }: IDropdownUserLanguagesProps) => 
             }}>
             <MenuLink>
                 <MenuIcon>
-                    <KeenIconsComponent className="" type="duotone" name="icon" />
+                    <KeenIcon icon="icon" />
                 </MenuIcon>
                 <MenuTitle>
                     <FormattedMessage id="USER.MENU.LANGUAGE" />

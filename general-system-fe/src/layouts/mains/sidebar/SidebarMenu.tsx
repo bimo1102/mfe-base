@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 
+import { KeenIcon } from '@/components';
 import {
     IMenuItemConfig,
     Menu,
@@ -16,7 +17,6 @@ import {
     TMenuConfig,
 } from '@/components/menu';
 import { useMenus } from '@/providers';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 
 const SidebarMenu = () => {
     const linkPl = 'ps-[10px]';
@@ -66,7 +66,7 @@ const SidebarMenu = () => {
                             linkPy
                         )}>
                         <MenuIcon className={clsx('items-start text-gray-500 dark:text-gray-400', iconWidth)}>
-                            {item.icon && <KeenIconsComponent className={iconSize} type="duotone" name={item.icon} />}
+                            {item.icon && <KeenIcon icon={item.icon} className={iconSize} />}
                         </MenuIcon>
                         <MenuTitle className="text-sm font-medium text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary">
                             {item.title}
@@ -101,7 +101,7 @@ const SidebarMenu = () => {
                                 'items-start text-gray-600 dark:text-gray-500 menu-item-active:text-primary menu-link-hover:!text-primary',
                                 iconWidth
                             )}>
-                            {item.icon && <KeenIconsComponent className={iconSize} type="duotone" name={item.icon} />}
+                            {item.icon && <KeenIcon icon={item.icon} className={iconSize} />}
                         </MenuIcon>
                         <MenuTitle className="text-sm font-medium text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary">
                             {item.title}
@@ -117,7 +117,7 @@ const SidebarMenu = () => {
             <MenuItem key={index}>
                 <MenuLabel className={clsx('border border-transparent', accordionLinkGap[0], linkPy, linkPl, linkPr)}>
                     <MenuIcon className={clsx('items-start text-gray-500 dark:text-gray-400', iconWidth)}>
-                        {item.icon && <KeenIconsComponent className={iconSize} type="duotone" name={item.icon} />}
+                        {item.icon && <KeenIcon icon={item.icon} className={iconSize} />}
                     </MenuIcon>
                     <MenuTitle className="text-sm font-medium text-gray-800">{item.title}</MenuTitle>
 
@@ -235,12 +235,8 @@ const SidebarMenu = () => {
     const buildMenuArrow = () => {
         return (
             <MenuArrow className={clsx('text-gray-400 w-[20px] shrink-0 justify-end ms-1', rightOffset)}>
-                <KeenIconsComponent className="text-2xs menu-item-show:hidden" type="duotone" name="plus" />
-                <KeenIconsComponent
-                    className="text-2xs hidden menu-item-show:inline-flex"
-                    type="duotone"
-                    name="minus"
-                />
+                <KeenIcon icon="plus" className="text-2xs menu-item-show:hidden" />
+                <KeenIcon icon="minus" className="text-2xs hidden menu-item-show:inline-flex" />
             </MenuArrow>
         );
     };

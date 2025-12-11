@@ -1,3 +1,4 @@
+import { KeenIcon } from '@/components';
 import {
     Dialog,
     DialogBody,
@@ -16,7 +17,6 @@ import {
 } from '@/pages/public-profile/profiles/default';
 import { NavbarDropdown } from '@/partials/navbar';
 import { toAbsoluteUrl } from '@/utils';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { Fragment } from 'react';
 
 interface IModalProfileProps {
@@ -79,11 +79,7 @@ const ModalProfile = ({ open, onOpenChange }: IModalProfileProps) => {
 
                                     <div className="flex flex-wrap justify-center gap-1 lg:gap-3 text-sm">
                                         <div className="flex gap-1 items-center">
-                                            <KeenIconsComponent
-                                                className="text-gray-500 text-base"
-                                                type="duotone"
-                                                name="abstract"
-                                            />
+                                            <KeenIcon icon="abstract" className="text-gray-500 text-base" />
 
                                             <a
                                                 href="https://keenthemes.com"
@@ -93,11 +89,7 @@ const ModalProfile = ({ open, onOpenChange }: IModalProfileProps) => {
                                             </a>
                                         </div>
                                         <div className="flex gap-1 items-center">
-                                            <KeenIconsComponent
-                                                className="text-gray-500 text-base"
-                                                type="duotone"
-                                                name="sms"
-                                            />
+                                            <KeenIcon icon="sms" className="text-gray-500 text-base" />
 
                                             <a
                                                 href="mailto:jenny@kteam.com"
@@ -110,11 +102,11 @@ const ModalProfile = ({ open, onOpenChange }: IModalProfileProps) => {
 
                                 <div className="flex justify-end gap-2">
                                     <button className="dropdown-toggle btn btn-sm btn-primary">
-                                        <KeenIconsComponent className="" type="duotone" name="users" />
+                                        <KeenIcon icon="users" />
                                         Connect
                                     </button>
                                     <button className="btn btn-sm btn-icon btn-light">
-                                        <KeenIconsComponent className="" type="duotone" name="messages" />
+                                        <KeenIcon icon="messages" />
                                     </button>
                                     <NavbarDropdown />
                                 </div>
@@ -125,7 +117,7 @@ const ModalProfile = ({ open, onOpenChange }: IModalProfileProps) => {
                             className="btn btn-sm btn-icon btn-light btn-outline absolute top-0 end-0 me-5 mt-5 lg:me-10 shadow-default"
                             data-modal-dismiss="true"
                             onClick={onOpenChange}>
-                            <KeenIconsComponent className="" type="duotone" name="cross" />
+                            <KeenIcon icon="cross" />
                         </button>
                     </DialogHeader>
                     <DialogBody className="scrollable-y py-0 mb-5 ps-6 pe-3 me-3">

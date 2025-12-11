@@ -1,5 +1,5 @@
+import { KeenIcon } from '@/components';
 import { toAbsoluteUrl } from '@/utils';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import clsx from 'clsx';
 
 interface IDropdownChatMessageOutProps {
@@ -19,10 +19,9 @@ const DropdownChatMessageOut = ({ text, time, read }: IDropdownChatMessageOutPro
 
                 <div className="flex items-center justify-end relative">
                     <span className="text-2xs font-medium text-gray-600 me-6">{time}</span>
-                    <KeenIconsComponent
+                    <KeenIcon
+                        icon="double-check"
                         className={clsx('text-lg absolute', read ? 'text-success' : 'text-gray-400')}
-                        type="duotone"
-                        name="double-check"
                     />
                 </div>
             </div>

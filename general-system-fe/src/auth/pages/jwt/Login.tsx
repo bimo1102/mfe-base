@@ -1,8 +1,7 @@
 import { useAuthContext } from '@/auth';
-import { Alert } from '@/components';
+import { Alert, KeenIcon } from '@/components';
 import { useLayout } from '@/providers';
 import { toAbsoluteUrl } from '@/utils';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import clsx from 'clsx';
 import { useFormik } from 'formik';
 import { type MouseEvent, useState } from 'react';
@@ -157,16 +156,8 @@ const Login = () => {
                             })}
                         />
                         <button className="btn btn-icon" onClick={togglePassword}>
-                            <KeenIconsComponent
-                                className={clsx('text-gray-500', { hidden: showPassword })}
-                                type="filled"
-                                name="eye"
-                            />
-                            <KeenIconsComponent
-                                className={clsx('text-gray-500', { hidden: !showPassword })}
-                                type="filled"
-                                name="eye-slash"
-                            />
+                            <KeenIcon icon="eye" className={clsx('text-gray-500', { hidden: showPassword })} />
+                            <KeenIcon icon="eye-slash" className={clsx('text-gray-500', { hidden: !showPassword })} />
                         </button>
                     </label>
                     {formik.touched.password && formik.errors.password && (

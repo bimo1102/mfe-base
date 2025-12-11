@@ -1,7 +1,6 @@
 import { useAuthContext } from '@/auth';
-import { Alert } from '@/components';
+import { Alert, KeenIcon } from '@/components';
 import { useLayout } from '@/providers';
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
 import { AxiosError } from 'axios';
 import clsx from 'clsx';
 import { useFormik } from 'formik';
@@ -97,15 +96,10 @@ const ResetPasswordChange = () => {
                                 e.preventDefault();
                                 setShowNewPassword(!showNewPassword);
                             }}>
-                            <KeenIconsComponent
-                                className={clsx('text-gray-500', { hidden: showNewPassword })}
-                                type="duotone"
-                                name="eye"
-                            />
-                            <KeenIconsComponent
+                            <KeenIcon icon="eye" className={clsx('text-gray-500', { hidden: showNewPassword })} />
+                            <KeenIcon
+                                icon="eye-slash"
                                 className={clsx('text-gray-500', { hidden: !showNewPassword })}
-                                type="duotone"
-                                name="eye-slash"
                             />
                         </button>
                     </label>
@@ -136,15 +130,13 @@ const ResetPasswordChange = () => {
                                 e.preventDefault();
                                 setShowNewPasswordConfirmation(!showNewPasswordConfirmation);
                             }}>
-                            <KeenIconsComponent
+                            <KeenIcon
+                                icon="eye"
                                 className={clsx('text-gray-500', { hidden: showNewPasswordConfirmation })}
-                                type="duotone"
-                                name="eye"
                             />
-                            <KeenIconsComponent
+                            <KeenIcon
+                                icon="eye-slash"
                                 className={clsx('text-gray-500', { hidden: !showNewPasswordConfirmation })}
-                                type="duotone"
-                                name="eye-slash"
                             />
                         </button>
                     </label>

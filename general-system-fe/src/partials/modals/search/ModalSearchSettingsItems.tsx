@@ -1,4 +1,4 @@
-import KeenIconsComponent from '@share-system-fe/react/components/common/icons/keenicons';
+import { KeenIcon } from '@/components';
 import { IModalSearchSettingsItem } from './types';
 
 export interface IModalSearchSettingsItemsProps {
@@ -12,7 +12,7 @@ const ModalSearchSettingsItems = ({ items }: IModalSearchSettingsItemsProps) => 
                 <div className="menu-item" key={index}>
                     <a href="#" className="menu-link">
                         <span className="menu-icon">
-                            <KeenIconsComponent className="" type="duotone" name={item.icon} />
+                            <KeenIcon icon={item.icon} />
                         </span>
                         <span className="menu-title">{item.info}</span>
                     </a>

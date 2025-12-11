@@ -15,7 +15,7 @@ module.exports = merge(common, {
         static: [
             { directory: path.resolve(__dirname, './src'), publicPath: '/' },
             { directory: path.resolve(__dirname, './../share-system-fe/plugins'), publicPath: '/assets/plugins' },
-            { directory: path.resolve(__dirname, './public/media'), publicPath: '/media' },
+            // { directory: path.resolve(__dirname, './public/media'), publicPath: '/media' },
             path.join(__dirname, 'public'),
         ],
     },
