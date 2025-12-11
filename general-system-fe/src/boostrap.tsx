@@ -8,8 +8,9 @@ import { ProvidersWrapper } from './providers';
 
 import '@/styles/globals.css';
 import '@share-system-fe/plugins/keenicons/duotone/style.css';
-// import '@share-system-fe/plugins/keenicons/outline/style.css';
-// import '@share-system-fe/plugins/keenicons/solid/style.css';
+import '@share-system-fe/plugins/keenicons/filled/style.css';
+import '@share-system-fe/plugins/keenicons/outline/style.css';
+import '@share-system-fe/plugins/keenicons/solid/style.css';
 
 setupAxios(axios);
 

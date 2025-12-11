@@ -1,8 +1,9 @@
 import { Container } from '@/components/container';
 import { Toolbar } from '@/layouts/mains/toolbar';
-import React, { Fragment, Suspense } from 'react';
+import { safeRemoteLoader } from '@/utils/safeRemoteLoader';
+import { Fragment, lazy, Suspense } from 'react';
 const MainDarkSidebarPage = () => {
-    const ServiceCategoryModule = React.lazy(() => import('GeneralReactModule/service-category'));
+    const ServiceCategoryModule = lazy(safeRemoteLoader(() => import('GeneralReactModule/service-category')));
     return (
         <Fragment>
             {/* <Container>

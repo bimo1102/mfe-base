@@ -196,12 +196,12 @@ const Signup = () => {
                         <button className="btn btn-icon" onClick={toggleConfirmPassword}>
                             <KeenIconsComponent
                                 className={clsx('text-gray-500', { hidden: showConfirmPassword })}
-                                type="duotone"
+                                type="filled"
                                 name="eye"
                             />
                             <KeenIconsComponent
                                 className={clsx('text-gray-500', { hidden: !showConfirmPassword })}
-                                type="duotone"
+                                type="filled"
                                 name="eye-slash"
                             />
                         </button>
